@@ -1,0 +1,71 @@
+@import "mixin";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "sofia",sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.img{
+    margin-left: inherit;
+    border: 5px solid rgba(14, 14, 221, 0.5);
+    opacity: 0.7;
+    outline-style: solid;
+    outline-color: invert;
+    border-radius: 5px;
+    height: 500px;
+    vertical-align: super;
+}
+li{
+    list-style-type: none;
+    a{
+        @include para;
+        text-decoration: none;
+        font-variant: small-caps;
+        &:hover{
+            color: rgb(90, 158, 58);
+            font-size: 5vh;
+            text-shadow: 1px 1px rgb(15, 241, 222);
+        }
+    }
+}
+.fab{
+    color: blue;
+}
+.one{
+    a{
+        text-transform: uppercase;
+        @include para;
+        &:link{
+            color: red;
+        }
+        &:active{
+            color: black;
+        }
+        &:visited{
+            color: rgb(117, 0, 128);
+        }
+    }
+}
+table{
+    @include common;
+    width: 100%;
+    height: 100px;
+    border-collapse: collapse;
+    th{
+        @include common;
+        text-align: center;
+        height: 60px;
+    }
+    td{
+        @include common;
+        text-align: center;
+    }
+}
+//provide background color with alternate.(stripped zebra table)
+tr:nth-child(odd){
+    background: cornflowerblue;
+}

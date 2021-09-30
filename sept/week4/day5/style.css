@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.img {
+  width: 200px;
+  height: 250px;
+}
+
+main {
+  background-color: blue;
+}
+
+main div h2 {
+  color: chartreuse;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

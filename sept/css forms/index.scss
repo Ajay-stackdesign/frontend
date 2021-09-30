@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-transform: uppercase;
+}
+form{
+    margin-top: 20px;
+    background-color: rgba(102, 112, 92, 0.925);
+    opacity: 0.9;
+    width: 45%;
+    margin-left: 5px;
+    label[for="firstname"]{
+        margin: 20px 0px 0px 0px;
+        text-transform: capitalize;
+        font-size: 35px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    input[type="text"]{
+        text-transform: capitalize;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+        border: 2px solid red;
+        color: rgb(201, 19, 19);
+        &:focus{
+            background-color: cadetblue;
+        }
+    }
+    label[for="lastname"]{
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-size: 35px;
+        position: relative;
+        left: 0px;
+        bottom: 4px;
+    }
+    label[for="country"]{
+        font-size: 30px;
+        text-indent: 10px;
+        text-transform: capitalize;
+    }
+    select[name="dropdown"]{
+        width: 200px;
+        height: 35px;
+        background-color: rgba(10, 243, 243, 0.199);
+        color: white;
+    }
+    input[type="submit"]{
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+        padding: 5px;
+        background-color: rgba(255, 255, 0, 0.466);
+        color: white;
+        text-align: center;
+
+    }
+}
