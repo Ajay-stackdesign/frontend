@@ -3,6 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }*/
+@mixin common($para,$par){
+    border: 2px solid black;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    order: $para;
+    flex-grow: $par;
+    flex-shrink: 1;
+}
 ul{
     list-style-type: none;
     width: 200px;
@@ -52,4 +63,50 @@ p::marker{
 // it match its particular attribute
 input[type="username"]{
     border: 2px solid rgb(168, 9, 9);
+}
+section{
+    border: 2px solid black;
+    margin: 5px;
+    #container{
+        display: flex;
+        flex-flow: row wrap;
+        height: 200pxpx;
+        
+        .one{ 
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            //text-align: center;
+            font-size: 35px;
+            padding: 1px 0px 1px 0px;
+            vertical-align: center;
+            text-align: center;
+            background: crimson;
+            transform: translate(2px,3px);
+        }
+    }
+}
+#wrapeer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background: chartreuse;
+    .one{
+        @include common(1,1);
+    }
+    .two{
+        @include common(-1,1);
+        
+    }
+    .three{
+        @include common(-2,2);
+    }
+    .four{
+        @include common(0,2);
+    }
+    .five{
+        @include common(2,2);
+    }
 }
