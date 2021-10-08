@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const CountButton = (props) =>{
     const [currentCount , setCurrentCount] = useState(0)
@@ -6,6 +6,16 @@ const CountButton = (props) =>{
     const handleClick = () => {
        setCurrentCount(currentCount + props.incrementBy)
     }
+
+    useEffect(()=>{
+        console.log("only call when mounted")
+    },[])
+
+    useEffect(()=>{
+        if (currentCount===10){
+            alert("the count is 10")
+        }
+    },[currentCount])
 
     const divStyle={
         color: "white",

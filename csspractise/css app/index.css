@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #ebd2d2;
+}
+
+main #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  left: 0;
+  top: 1rem;
+  z-index: 1;
+}
+
+main #navigation .fas {
+  color: #d41c1c;
+  width: 3rem;
+  font-size: 30px;
+}
+
+main #navigation .first {
+  border: none;
+  outline: none;
+  background-color: pink;
+  color: white;
+  text-transform: uppercase;
+}
+
+main #navigation .first:focus {
+  border: 2px solid black;
+}
+
+main #content .fallWinter {
+  color: black;
+  text-transform: capitalize;
+  position: relative;
+  left: 0;
+  top: 13rem;
+  z-index: 1;
+  text-indent: 3rem;
+  font-size: 3rem;
+  text-shadow: 2px 3px 4px red, 3px 4px 5px blue;
+}
+
+main #content .freeShiping {
+  color: black;
+  z-index: 1;
+  position: relative;
+  top: 14rem;
+  left: 0;
+  text-indent: 3rem;
+  font-size: 1.675rem;
+  text-shadow: 2px 3px 4px #2d940e, 3px 4px 5px #3d3647;
+}
+
+main #content .eCommerce {
+  width: 95rem;
+  height: 30rem;
+  background-size: contain , cover;
+  position: relative;
+  left: 0;
+  bottom: 7.3rem;
+}
+
+section .newArrival .products {
+  color: black;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 7rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  position: relative;
+  left: 0;
+  bottom: 8rem;
+}
+
+section .newArrival .lineUp {
+  color: black;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 7rem;
+  font-size: 1.675rem;
+}
+
+section #wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 0;
+  bottom: 5rem;
+}
+
+section .rampwalk {
+  width: 25rem;
+}
+
+article .popular .week {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  position: relative;
+  left: 0;
+  bottom: 2rem;
+}
+
+article .popular .street {
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.678rem;
+  position: relative;
+  left: 0;
+  bottom: 2rem;
+}
+
+article .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article .row .one {
+  width: 25rem;
+}
+
+article .pachama .chap {
+  color: red;
+  position: relative;
+  left: 40rem;
+  top: 3rem;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  text-transform: uppercase;
+}
+
+article .pachama .chap:hover {
+  background: rgba(36, 29, 65, 0.219);
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+footer .fab {
+  font-size: 2.2rem;
+  position: relative;
+  left: 0;
+  top: 5rem;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=index.css.map */
